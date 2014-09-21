@@ -37,8 +37,7 @@ The function "run_analysis.R" performs the following steps
 The data files are stitched together following this schematic: https://class.coursera.org/getdata-007/forum/thread?thread_id=49#comment-570   
 
 ### Extracts from the entire dataset only those variables that measure mean and standard deviation 
-* This step is executed by subsetting just those measures that have the text string “mean()” or “std()” at the end of the measure name, e.g. “tBodyAcc-mean()-X”   
-* The extracted dataset does NOT include measures that have the text string “mean” or “std” earlier in the measure name, e.g. “fBodyAccJerk-meanFreq()-X”   
+* This step is executed by subsetting just those measures that have the text string “mean” or “std” in the text of the variable name, e.g. “tBodyAcc-mean()-X”   
 * The extracted dataset is stored in a table called “extracted_dataset”   
 
 ### Reads in variable names and activity labels; transforms them to descriptive names and labels; and appends to the extracted dataset
