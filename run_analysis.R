@@ -40,7 +40,7 @@ merged_data<-merge(extracted_dataset,activities)
 tidy_data<-merged_data
 
 # Use write.table to create the file called "tidy_data.txt"
-write.table(tidy_data,"tidy_data.txt")
+write.table(tidy_data,"tidy_data.txt",row.name=FALSE)
 print("You should have a file called 'tidy_data.txt' in your working directory now")
 print("Notwithstanding the file name, I ran out of time, so I wasn't able to do the tidying, e.g. step #5 of the assignment")
 }
