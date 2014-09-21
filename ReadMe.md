@@ -13,15 +13,13 @@ Steps in the Code Review Process
 --------------------------------
 * Open R and run the script called "run_analysis.R" using this code:   
 ```
-source(run_analysis.R)
+source("run_analysis.R")
 run_analysis()
 ```
 
-* Review the codebook called, "Codebook.Rmd" to understand how to interpret the tidy data file   
-```
-source(Codebook.Rmd)
-```   
-* Evaluate the quality of the end result by reading and viewing the resulting data file called, "tidy_data.xml" using this code:   
+* Review the codebook called, "Codebook.Rmd" to understand how to interpret the tidy data file. *(Note: I set up the template for this but ran out of time and didn't actually get a chance to populate the template)*   
+
+* Evaluate the quality of the end result by reading and viewing the resulting data file called, "tidy_data.txt" using this code:   
 ```
 data <-read.table(“tidy_data.txt”, header = TRUE)
 View(data)
@@ -42,7 +40,7 @@ The data files are stitched together following this schematic: https://class.cou
 
 ### Reads in variable names and activity labels; transforms them to descriptive names and labels; and appends to the extracted dataset
 
-Good data hygiene requires that variable names and activity labels should be *(source: “Editing Text Variables” lecture by Jeff Leek)*:   
+Good data hygiene requires that variable names and activity labels should be (source: “Editing Text Variables” lecture by Jeff Leek):   
 * all lower case   
 * descriptive   
 * not duplicated   
@@ -50,9 +48,9 @@ Good data hygiene requires that variable names and activity labels should be *(s
 
 Variable names and activity labels were joined to the dataset following this schematic: https://class.coursera.org/getdata-007/forum/thread?thread_id=49#comment-570   
 
-### Takes the extracted dataset and turns it into a tidy dataset called, “tidy_data”   
+### Takes the extracted dataset and turns it into a tidy dataset called, “tidy_data”.  *(Note: I ran out of time and was not able to include this step in my code)*     
 
-Here are the properties of a tidy dataset *(source: Hadley Wickham , “Tidy Data”; Journal of Statistical Software)*   
+Here are the properties of a tidy dataset (source: Hadley Wickham , “Tidy Data”; Journal of Statistical Software):    
 * Each variable forms a column   
 * Each observation forms a row   
 * Each table/file stores data about one kind of observation   
